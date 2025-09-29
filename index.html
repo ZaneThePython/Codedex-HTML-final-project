@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cocoa Juice - Menu</title>
+    <title>Cat Paradise - Menu</title>
   </head>
   <header>
-    <h1>Cocoa Juice</h1>
-    <h2>Menu</h2>
+    <h1>Cat Paradise</h1>
+    <img id="header-img" src="https://i.redd.it/pe5j1dhmpy341.jpg" alt="Cat right before being juiced" width="200">
+    <nav>
+      <ul>
+        <li><a href="#drinks">Drinks</a></li>
+        <li><a href="#food">Food</a></li>
+      </ul>
+    </nav>
   </header>
+  <body>
+    <section>
+      <h2>Menu</h2>
+      <h3 id="drinks">Drinks</h3>
+      <ul>
+        <li>Cat Juice</li>
+        <li>Juiced CocaCola</li>
+        <li>Hot Chocolate</li>
+      </ul>
+      <h3 id="food">Food</h3>
+      <ul>
+        <li>Cat Waffles</li>
+        <li>Cat Watermelon</li>
+        <li>Cat Pizza</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Place Your Order</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="cat-juice">Cat Juice</label>
+        <input type="number" id="cat-juice" min="0" max="5">
+        <br>
+        <label for="juiced-coca-cola">Juiced CocaCola</label>
+        <input type="number" id="juiced-coca-cola" min="0" max="5">
+        <br>
+        <label for="hot-chocolate">Hot Chocolate</label>
+        <input type="number" id="hot-chocolate" min="0" max="5">
+        <input type="radio" name="hot-chocolate">Whipped Cream
+        <input type="radio" name="hot-chocolate">No Whipped Cream
+        <br>
+        <label for="cat-waffles">Cat Waffles</label>
+        <input type="number" id="cat-waffles" min="0" max="5">
+        <br>
+        <label for="cat-watermelon">Cat Watermelon</label>
+        <input type="number" id="cat-watermelon" min="0" max="5">
+        <br>
+        <label for="cat-pizza">Cat Pizza</label>
+        <input type="number" id="cat-pizza" min="0" max="5">
+        <br>
+        <textarea name="Special Instructions" id="instructions" placeholder="Any special instructions?"></textarea>
+        <button type="submit">Go to Checkout</button>
+      </form>
+    </section>
+  </body>
+  <br><br><br>
+  <footer>
+    <p><i>Made with love by ZaneDev</i></p>
+  </footer>
 </html>
